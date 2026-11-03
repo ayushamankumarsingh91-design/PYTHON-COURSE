@@ -1,0 +1,13 @@
+# Write a function that removes duplicate characters from the given string and print the new modified string.
+s = input()
+clean_s = s.strip()
+
+def remove_duplicates(s): # here s is not that above parameter just destroyed 
+    #empty string
+    temp_empty = ""
+    for i in s:
+        if i not in temp_empty: # main part
+            temp_empty += i
+    return temp_empty
+
+print(remove_duplicates(clean_s))
